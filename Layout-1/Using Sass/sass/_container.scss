@@ -1,0 +1,63 @@
+/*----------------------Top------------------------------------*/
+.container{
+  width: 100%;  
+  margin: 1vh 0;
+  padding: 0 1.5rem;
+
+  & > div:first-child{
+    min-height: 30vh; 
+    background-color: $light_gray;
+    border: solid 1px red;
+    margin-bottom: 2vh;
+  }
+}  
+
+/*----------------------Middle------------------------------------*/
+.middle{
+    margin-bottom: 2vh;
+   
+   &::after{
+     content: "";
+     clear:left;
+     display: block;
+   }
+   
+   div{
+    float: left;
+    min-height: 20vh; 
+    width: 24%;
+    background-color: $light_gray;
+    border: solid 1px red;
+    margin-right:1%;
+   }
+
+  div:nth-child(4){
+    width:25%;
+    margin-right: 0;
+   }
+}
+
+/*----------------------Bottom------------------------------------*/
+  .bottom{
+    &::after{
+    content: "";
+    clear:left;
+    display: block;
+   }
+     
+    & div{
+     min-height: 30vh;  
+     background-color: $light_gray;
+     border: solid 1px red;
+   } 
+
+    & > div:first-child{
+     float: left;
+     width: 63%; 
+    } 
+   
+    & > div:last-child{
+     float: right;
+     width: 36%; 
+    } 
+}
